@@ -7,6 +7,7 @@ import java.util.*;
 public class MemoryMemberRepository implements MemberRepository{
     // implements Mem..치고 옵션엔터하면 아까 정의한 네가지 기능 포맷을 자동으로 만들 수 있음.
 
+    //static을 사용하는 이유는 객체가 아닌 클래스에 변수가 붙도록 해서 모든 클래스에서 하나의 통일된 디비를 사용할 수 있도록 하는 것.
     private static Map<Long, Member> store = new HashMap<>(); //save 해놓을 곳
     // 실무에서는 동시성 문제가 있기 때문에 HashMap보다 ConcurrentHashMap을 사용함
     private static long sequence = 0L;
