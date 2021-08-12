@@ -1,9 +1,11 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
     // implements Mem..치고 옵션엔터하면 아까 정의한 네가지 기능 포맷을 자동으로 만들 수 있음.
 
